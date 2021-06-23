@@ -1,2 +1,3 @@
 # devadasnano.github.io
-The personal website for this org
+
+Website for Devadas Nanoscience Research Lab at Towson University. Features will include online lab training modules, links to lab-wide resources, etc
