@@ -11,7 +11,8 @@
             body{
                 /* margin: 0;
                 padding: 0; */
-                overflow-y: hidden;
+                color: white;
+                font-size: 1.3em;
             }
 
             #container{
@@ -23,17 +24,18 @@
                 width:100%;
                 text-align: center;
                 display: inline-block;
-                position: absolute;
+                position: relative;
                 top: 50%;
+                left: 50%;
                 transform: translateY(-50%);
             }
         </style>
 
     </head>
     <body>
-        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay=3000>
+        <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay=3000>
             <div class="toast-header">
-                <!-- <img src="..." class="rounded mr-2" alt="..." /> -->
+                <img src="..." class="rounded mr-2" alt="..." />
                 <strong class="mr-auto">notification</strong>
                 <small class="text-muted">11 mins ago</small>
                 <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close"></button>
@@ -43,52 +45,70 @@
             <div class="toast-body">
                 test notification
             </div>
-        </div>
+        </div> -->
+        <h1 style = 'padding-top: 10%; text-align: center;'>All relevant links below</h1>
         <div id = "container">
             <div id = "buttons">
-                <h1 style = 'text-align: center;'>All relevant links below</h1>
                 <p id = "button-header">
-                    <b>Link to BookMyLab</b> (username: youremail@tu.edu, password: pass):
+                    <b>Link to BookMyLab</b> <br />(username: youremail@tu.edu, password: pass):
                 </p>
-                <a href='https://tu-my.sharepoint.com' class="btn btn-info">link</a>
+                <a href='http://towsonchemcore.bookmylab.com/users/login.php' class="btn btn-info">BookMyLab</a>
                 <br />
                 <br />
                 <p id = "button-header">
                     <b>Link to TU OneDrive</b>:
                 </p>
-                <a href='https://tu-my.sharepoint.com' class="btn btn-info">link</a>
+                <a href='https://tu-my.sharepoint.com' class="btn btn-info">OneDrive</a>
                 <br />
                 <br />
                 <p id = "button-header">
-                    <b>Link to TU OneDrive</b> (username: youremail@tu.edu, password: pass):
+                    <b>Link to End of Day Checklist</b> (General):
                 </p>
-                <a href='https://tu-my.sharepoint.com' class="btn btn-info">link</a>
+                <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=knP5y_ZJ3Umophn3EO_MNfTtL-dWEN5GiVrsjXJEBDRUMEVHWjRZUVFGVkw2VzZFMjBROTlBUjhaQS4u' class="btn btn-info">Checklist</a>
                 <br />
                 <br />
                 <p id = "button-header">
-                    <b>Link to TU OneDrive</b> (username: youremail@tu.edu, password: pass):
+                    <b>Link to End of Day Checklist</b> (Ferrofluid):
                 </p>
-                <a href='https://tu-my.sharepoint.com' class="btn btn-info">link</a>
+                <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=knP5y_ZJ3Umophn3EO_MNfTtL-dWEN5GiVrsjXJEBDRUQzNYMkhUTFZGWDRGQ1BIUjZDR1pTUEtaRy4u' class="btn btn-info">Checklist</a>
+                <br />
+                <br />
+                <p id = "button-header">
+                    <b>SEM Imaging Request Form</b>:
+                </p>
+                <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=knP5y_ZJ3Umophn3EO_MNfTtL-dWEN5GiVrsjXJEBDRUM0RJT0MzWFVNMkNPUVlTWUUxQjM2SkFKRC4u' class="btn btn-info">Form Link</a>
+                <br />
+                <br />
+                <p id = "button-header">
+                    <b>General WebEx Link</b>:
+                </p>
+                <a href='https://towson.webex.com/join/mdevadas' class="btn btn-info">WebEx</a>
+                <br />
+                <br />
+                <p id = "button-header">
+                    <b>Link to TU OneDrive</b>:
+                </p>
+                <a href='https://tu-my.sharepoint.com' class="btn btn-info">OneDrive</a>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script>
-            $(document).ready(function() {
-                $(".toast").toast('show');
-            });
+            // $(document).ready(function() {
+            //     $(".toast").toast('show');
+            // });
             let r, g, b, rr, gg, bb;
-            [r, g, b, rr, gg, bb] = [240, 160, 140, true, true, true];
+            [r, g, b, rr, gg, bb] = [200, 100, 90, true, true, true];
             console.log('initiated')
 
             setInterval(() => {
-                if(r <= 180) rr = true
-                else if(r >= 220) rr = false
+                if(r <= 120) rr = true
+                else if(r >= 200) rr = false
 
-                if(g <= 150) gg = true
-                else if(g >= 200) gg = false
+                if(g <= 80) gg = true
+                else if(g >= 150) gg = false
                 
-                if(b <= 100) bb = true
-                else if(b >= 200) bb = false
+                if(b <= 80) bb = true
+                else if(b >= 130) bb = false
 
                 rr == true ? r++ : r--;
                 gg == true ? g++ : g--;
