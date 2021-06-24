@@ -8,27 +8,55 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <style>
+            
             body{
                 /* margin: 0;
                 padding: 0; */
                 color: white;
-                font-size: 1.3em;
+                font-size: 1.1rem;
             }
 
             #container{
                 height:100%;
+                text-align: center;
+                width:100%;
                 display: inline-block;
             }
+
+            h1{
+                padding-top:10%;
+            }
+
             #buttons{
                 vertical-align: middle;
-                width:100%;
-                text-align: center;
-                display: inline-block;
+                display: inline-flexbox;
                 position: relative;
                 top: 50%;
-                left: 50%;
                 transform: translateY(-50%);
             }
+
+            @media screen and (max-width: 600px) {
+                body {
+                    font-size: 0.9rem;
+                }
+
+                h1{
+                    padding-top: 5%; 
+                }
+            }
+
+            @media screen and (min-width: 600px) {
+                body {
+                    font-size: 1.2rem;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                body {
+                    font-size: 1.4rem;
+                }
+            }
+
         </style>
 
     </head>
@@ -46,7 +74,7 @@
                 test notification
             </div>
         </div> -->
-        <h1 style = 'padding-top: 10%; text-align: center;'>All relevant links below</h1>
+        <h1 style = 'text-align: center;'>All relevant links below</h1>
         <div id = "container">
             <div id = "buttons">
                 <p id = "button-header">
@@ -83,12 +111,6 @@
                     <b>General WebEx Link</b>:
                 </p>
                 <a href='https://towson.webex.com/join/mdevadas' class="btn btn-info">WebEx</a>
-                <br />
-                <br />
-                <p id = "button-header">
-                    <b>Link to TU OneDrive</b>:
-                </p>
-                <a href='https://tu-my.sharepoint.com' class="btn btn-info">OneDrive</a>
             </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -115,7 +137,6 @@
                 bb == true ? b++ : b--;
 
                 document.body.style.backgroundImage = `linear-gradient(${(200-r)/55 * 50}deg, rgb(${r}, ${g}, ${b}), rgb(${g}, ${r}, ${r}))`
-                console.log(rr, gg, bb, r, g, b)
             }, 50)
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
