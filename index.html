@@ -92,14 +92,14 @@
                     <b>Link to BookMyLab (Devadas Lab)</b> <br />(username: youremail@tu.edu, password: pass):
                 </p>
                 <a href='http://towsonchemcore.bookmylab.com/users/login.php' class="btn btn-info">BookMyLab</a>
-                <button type="button" id = "login_dev" class="btn btn-primary">Click for Login Info</button>
+                <button type="button" id = "login_dev" class="btn btn-info">Click for Login Info</button>
                 <br />
                 <br />
                 <p id = "button-header">
                     <b>Link to BookMyLab (Soto Lab Centrifuge)</b> <br />(username: youremail@tu.edu, password: yourusername2021):
                 </p>
                 <a href='http://towsonchemcore.bookmylab.com/users/login.php' class="btn btn-info">BookMyLab</a>
-                <button type="button" id = "login_soto" class="btn btn-primary">Click for Login Info</button>
+                <button type="button" id = "login_soto" class="btn btn-info">Click for Login Info</button>
                 <br />
                 <br />
                 <p id = "button-header">
@@ -139,7 +139,7 @@
                 let username = prompt("Please enter your username");
                 
                 if("nhondr1, daligh1, ytewal1, mhakim, hkelan1, pbrown24, nsteve7, skoune2, stopka1, braufm1, jbryan24, kmeyer14, mwebst10, zquresh1, scoomb1, zgrady1, tsnyder, zfreel2, atrigu1".split(", ").includes(username)){
-                    alert("Username: yourusername@towson.edu or students.towson.edu \nPassword: pass")
+                    alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: pass`)
                 }
             })
             
@@ -147,7 +147,7 @@
                 let username = prompt("Please enter your username");
                 
                 if("nhondr1, daligh1, ytewal1, mhakim, hkelan1, pbrown24, nsteve7, skoune2, stopka1, braufm1, jbryan24, kmeyer14, mwebst10, zquresh1, scoomb1, zgrady1, tsnyder, zfreel2, atrigu1".split(", ").includes(username)){
-                    alert("Username: yourusername@towson.edu or students.towson.edu \nPassword: youusername2021")
+                    alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: ${username}`)
                 }
             })
 
