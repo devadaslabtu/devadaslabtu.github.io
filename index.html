@@ -89,14 +89,14 @@
         <div id = "container">
             <div id = "buttons">
                 <p id = "button-header">
-                    <b>Link to BookMyLab (Devadas Lab)</b>:
+                    <b>Link to BookMyLab</b> (Devadas Lab):
                 </p>
                 <a href='http://towsonchemcore.bookmylab.com/users/login.php' class="btn btn-info">BookMyLab</a>
                 <button type="button" id = "login_dev" class="btn btn-info">Click for Login Info</button>
                 <br />
                 <br />
                 <p id = "button-header">
-                    <b>Link to BookMyLab (Soto Lab Centrifuge)</b>:
+                    <b>Link to BookMyLab</b> (Soto Lab Centrifuge):
                 </p>
                 <a href='http://towsonchemcore.bookmylab.com/users/login.php' class="btn btn-info">BookMyLab</a>
                 <button type="button" id = "login_soto" class="btn btn-info">Click for Login Info</button>
@@ -141,15 +141,16 @@
                 if(users.includes(d)){
                     alert(`Username: ${d}@towson.edu or students.towson.edu \nPassword: ${d}2021`)
                 }
-                
-                let username = prompt("Please enter your username");
-                
-                if(users.includes(username)){
-                    alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: pass`)
-                    document.cookie = "username="+username
-                }
                 else{
-                    alert("You are not granted access to this")
+                    let username = prompt("Please enter your username");
+
+                    if(users.includes(username)){
+                        alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: pass`)
+                        document.cookie = "username="+username
+                    }
+                    else{
+                        alert("You are not granted access to this")
+                    }
                 }
             })
             
@@ -159,15 +160,16 @@
                 if(users.includes(d)){
                     alert(`Username: ${d}@towson.edu or students.towson.edu \nPassword: ${d}2021`)
                 }
-                
-                let username = prompt("Please enter your username");
-                
-                if(users.includes(username)){
-                    alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: ${username}2021`)
-                    document.cookie = "username="+username
-                }
                 else{
-                    alert("You are not granted access to this")
+                    let username = prompt("Please enter your username");
+
+                    if(users.includes(username)){
+                        alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: ${username}2021`)
+                        document.cookie = "username="+username
+                    }
+                    else{
+                        alert("You are not granted access to this")
+                    }
                 }
             })
 
