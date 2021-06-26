@@ -3,9 +3,7 @@
         IDEAS:
             for passcode, send out the code everyone needs, and then from that save the thing as a cookie so they don't need to keep retyping in the passcode
             
-
-
-
+            SEM imaging request form needs passcode
     -->
 
 
@@ -46,6 +44,17 @@
                 transform: translateY(-50%);
             }
 
+            .sidebar{
+                width: 20%;
+                position: absolute;
+                float: right;
+                top: 20%;
+                height:100%;
+                right:0;
+                height:125%;
+                overflow-y: hidden;
+            }
+
             @media screen and (max-width: 600px) {
                 body {
                     font-size: 0.9rem;
@@ -54,17 +63,47 @@
                 h1{
                     padding-top: 5%; 
                 }
+
+                .sidebar{
+                    width: 100%;
+                    position: relative;
+                }
             }
 
             @media screen and (min-width: 600px) {
                 body {
                     font-size: 1.2rem;
                 }
+
+                .sidebar{
+                    width: 100%;
+                    position: relative;
+                }
             }
 
             @media screen and (min-width: 768px) {
                 body {
                     font-size: 1.4rem;
+                }
+
+                .sidebar{
+                    width: 75%;
+                    text-align: center;
+                    right: 12.5%;
+                    position: relative;
+                }
+            }
+
+            @media screen and (min-width: 1000px){
+                .sidebar{
+                    width: 20%;
+                    position: absolute;
+                    float: right;
+                    top: 22%;
+                    height:100%;
+                    right:0;
+                    height:125%;
+                    overflow-y: hidden;
                 }
             }
 
@@ -125,6 +164,10 @@
                 </p>
                 <a href='https://forms.office.com/Pages/ResponsePage.aspx?id=knP5y_ZJ3Umophn3EO_MNfTtL-dWEN5GiVrsjXJEBDRUM0RJT0MzWFVNMkNPUVlTWUUxQjM2SkFKRC4u' class="btn btn-info">Form Link</a>
             </div>
+            <div class = 'sidebar'>
+                <a href="https://twitter.com/devadas_grouptu?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @devadas_grouptu</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <a class="twitter-timeline" href="https://twitter.com/Devadas_GroupTU?ref_src=twsrc%5Etfw">Tweets by Devadas_GroupTU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
         </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script>
@@ -137,40 +180,40 @@
             
             document.querySelector("#login_dev").addEventListener("click", ()=>{
                 const users = "mdevadas, nhondr1, daligh1, ytewal1, mhakim, hkelan1, pbrown24, nsteve7, skoune2, stopka1, braufm1, jbryan24, kmeyer14, mwebst10, zquresh1, scoomb1, zgrady1, tsnyder, zfreel2, atrigu1".split(", ")
-                let d = decodeURIComponent(document.cookie).split(";")[0].split("=")[1]
-                if(users.includes(d)){
-                    alert(`Username: ${d}@towson.edu or students.towson.edu \nPassword: pass`)
+                // let d = decodeURIComponent(document.cookie).split(";")[0].split("=")[1]
+                // if(users.includes(d)){
+                //     alert(`Username: ${d}@towson.edu or students.towson.edu \nPassword: pass`)
+                // }
+                // else{
+                let username = prompt("Please enter your username");
+
+                if(users.includes(username)){
+                    alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: pass`)
+                    // document.cookie = "username="+username
                 }
                 else{
-                    let username = prompt("Please enter your username");
-
-                    if(users.includes(username)){
-                        alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: pass`)
-                        document.cookie = "username="+username
-                    }
-                    else{
-                        alert("You are not granted access to this")
-                    }
+                    alert("You are not granted access to this")
                 }
+                // }
             })
             
             document.querySelector("#login_soto").addEventListener("click", ()=>{
-                const users = "mdevadas, nhondr1, daligh1, ytewal1, mhakim, hkelan1, pbrown24, nsteve7, skoune2, stopka1, braufm1, jbryan24, kmeyer14, mwebst10, zquresh1, scoomb1, zgrady1, tsnyder, zfreel2, atrigu1".split(", ")
-                let d = decodeURIComponent(document.cookie).split(";")[0].split("=")[1]
-                if(users.includes(d)){
-                    alert(`Username: ${d}@towson.edu or students.towson.edu \nPassword: ${d}2021`)
+                const users = "mdevadas, nhondr1, daligh1, ytewal1, mhakim, hkelan1, nsteve7, skoune2, stopka1, braufm1, jbryan24, kmeyer14, mwebst10, zquresh1, tsnyder, atrigu1".split(", ")
+                // let d = decodeURIComponent(document.cookie).split(";")[0].split("=")[1]
+                // if(users.includes(d)){
+                //     alert(`Username: ${d}@towson.edu or students.towson.edu \nPassword: ${d}2021`)
+                // }
+                // else{
+                let username = prompt("Please enter your username");
+
+                if(users.includes(username)){
+                    alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: ${username}2021`)
+                    document.cookie = "username="+username
                 }
                 else{
-                    let username = prompt("Please enter your username");
-
-                    if(users.includes(username)){
-                        alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: ${username}2021`)
-                        document.cookie = "username="+username
-                    }
-                    else{
-                        alert("You are not granted access to this")
-                    }
+                    alert("You are not granted access to this")
                 }
+                // }
             })
 
             setInterval(() => {
@@ -187,7 +230,7 @@
                 gg == true ? g++ : g--;
                 bb == true ? b++ : b--;
 
-                document.body.style.backgroundImage = `linear-gradient(${(200-r)/55 * 50}deg, rgb(${r}, ${g}, ${b}), rgb(${g}, ${r}, ${r}))`
+                document.body.style.backgroundImage = `linear-gradient(${90}deg, rgb(${r}, ${g}, ${b}), rgb(${g}, ${r}, ${r}))`
             }, 50)
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

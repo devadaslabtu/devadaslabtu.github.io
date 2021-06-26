@@ -1,0 +1,121 @@
+<html>
+    <!--
+        IDEAS:
+            for passcode, send out the code everyone needs, and then from that save the thing as a cookie so they don't need to keep retyping in the passcode
+            
+            SEM imaging request form needs passcode
+    -->
+
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Devadas Nanoscience Lab</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/microsoft/209/lab-coat_1f97c.png">
+        
+        <style>
+
+            body{
+                /* margin: 0;
+                padding: 0; */
+                color: white;
+                font-size: 1.1rem;
+            }
+
+            #container{
+                height:100%;
+                text-align: center;
+                width:100%;
+                display: inline-block;
+            }
+
+            h1{
+                padding-top:10%;
+            }
+
+            #buttons{
+                vertical-align: middle;
+                display: inline-flexbox;
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            @media screen and (max-width: 600px) {
+                body {
+                    font-size: 0.9rem;
+                }
+
+                h1{
+                    padding-top: 5%; 
+                }
+            }
+
+            @media screen and (min-width: 600px) {
+                body {
+                    font-size: 1.2rem;
+                }
+            }
+
+            @media screen and (min-width: 768px) {
+                body {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .container{
+                width:20%;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <!-- <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay=3000>
+            <div class="toast-header">
+                <img src="..." class="rounded mr-2" alt="..." />
+                <strong class="mr-auto">notification</strong>
+                <small class="text-muted">11 mins ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close"></button>
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                test notification
+            </div>
+        </div> -->
+        <h1 style = 'text-align: center;'>All relevant links below</h1>
+        <div class = 'container'>
+            <a class="twitter-timeline" href="https://twitter.com/Devadas_GroupTU?ref_src=twsrc%5Etfw">Tweets by Devadas_GroupTU</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script>
+            let r, g, b, rr, gg, bb;
+            [r, g, b, rr, gg, bb] = [200, 100, 90, true, true, true];
+            console.log('initiated')
+            
+
+            setInterval(() => {
+                if(r <= 120) rr = true
+                else if(r >= 200) rr = false
+
+                if(g <= 80) gg = true
+                else if(g >= 150) gg = false
+                
+                if(b <= 80) bb = true
+                else if(b >= 130) bb = false
+
+                rr == true ? r++ : r--;
+                gg == true ? g++ : g--;
+                bb == true ? b++ : b--;
+
+                document.body.style.backgroundImage = `linear-gradient(${(200-r)/55 * 50}deg, rgb(${r}, ${g}, ${b}), rgb(${g}, ${r}, ${r}))`
+            }, 50)
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
