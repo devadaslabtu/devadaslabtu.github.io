@@ -221,7 +221,7 @@ body{
     margin: -100px 0 0 -50px;
     padding: 50px;
     z-index:-1;
-    height: 2000px;
+    height: 120vh;
     padding-top: 125px;
 
     background: #ededed;
