@@ -8,7 +8,7 @@ body{
     color: #fff;
     overflow-x: hidden;
     font-family: "Avenir Next", "Avenir", sans-serif;
-    background-color: black;
+    background-color: white;
 }
 
 #container{
@@ -18,16 +18,53 @@ body{
     display: inline-block;
 }
 
+#summary{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 15% 5% 10% 5%;
+    color: rgb(63, 59, 0);
+}
+
+footer{
+    margin-top:50%;
+    width: 100%;
+    background: rgb(187, 209, 245);
+    bottom:0;
+    height:350px;
+    position:relative;
+    z-index:-1;
+}
+
+#grid-element{
+    padding:15% 5% 15% 5%;
+}
+
+#grid-elementz{
+    padding-top:125px;
+    padding-left:12%;
+}
+
+#grid{
+    width:100%;
+    color: black;
+    grid-template-columns: auto auto auto;
+    display: inline-grid;
+}
+
 #full-menu{
     position: fixed;
     top: 0;
     width: 100%;
-    overflow: hidden;
-    background-color: rgb(2, 148, 153);
+    visibility: visible;
+    padding-left:5%;
+    overflow: hiddenz;
+    background-color: rgb(151, 175, 163);
+    padding-right: 5%;
 }
 
 #full-menu a{
-    padding:2% 3% 2% 3%;
+    padding:15px;
+    font-size: 1.1rem;
     text-align: center;
     display: block;
     float: left;
@@ -38,10 +75,10 @@ body{
     text-align: center;
     display: block;
     float: left;
-    margin-top:1%;
-    margin-bottom:1%;
-    margin-left:2%;
+    margin: 15px;
     color:rgb(255, 255, 255);
+    filter:invert(100%);
+    object-fit:contain;
 }
 
 #link:hover{
@@ -50,14 +87,19 @@ body{
 
 #banner{
     width: 100%;
-    margin: 12% 0 0 0;
+    margin: 200px 0 0 0;
     text-align: center;
     font-size: 3rem;
-    background: -webkit-linear-gradient(rgb(165, 136, 19), rgb(140, 140, 140));
+    background: -webkit-linear-gradient(rgb(126, 104, 15), rgb(102, 102, 102));
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
     -moz-text-fill-color: transparent;
+    animation: fadeIn linear 2s;
+    -webkit-animation: fadeIn linear 2s;
+    -moz-animation: fadeIn linear 2s;
+    -o-animation: fadeIn linear 2s;
+    -ms-animation: fadeIn linear 2s;
 }
 
 a:hover{
@@ -99,10 +141,18 @@ h1{
         font-size: 2rem;
     }
 
+    #full-menu{
+        visibility: hidden;
+    }
+
     .sidebar{
         top: 0;
         width: 100%;
         position: relative;
+    }
+
+    #banner{
+        margin-top:150px;
     }
 }
 
@@ -114,6 +164,14 @@ h1{
     h1{
         padding-top: 6rem; 
         font-size: 2.3rem;
+    }
+
+    #banner{
+        margin-top:150px;
+    }
+
+    #full-menu{
+        visibility: hidden;
     }
 
     .sidebar{
@@ -132,11 +190,19 @@ h1{
         visibility: hidden;
     }
 
+    #banner{
+        margin-top:200px;
+    }
+
     .sidebar{
         width: 100%;
         text-align: center;
         top: 0;
         position: relative;
+    }
+
+    #full-menu{
+        visibility: visible;
     }
 }
 
@@ -151,6 +217,12 @@ h1{
     }
     #hamburger{
         visibility: hidden;
+    }
+    #banner{
+        margin-top:200px;
+    }
+    #full-menu{
+        visibility: visible;
     }
 }
 
@@ -216,7 +288,7 @@ h1{
     margin-bottom: 5px;
     position: relative;
 
-    background: #fff;
+    background: rgb(16, 15, 15);
     border-radius: 3px;
 
     z-index: 1;
@@ -300,3 +372,42 @@ h1{
 #menuToggle input:checked ~ ul{
     transform: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
