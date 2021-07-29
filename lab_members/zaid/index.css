@@ -11,6 +11,53 @@ body{
     background-color: white;
 }
 
+#contact a{
+    color:black;
+    text-decoration: none;
+}
+
+#contact a:hover{
+    color:gray;
+    text-decoration:none;
+}
+
+#contact{
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    font-size:1rem;
+    background-color:rgb(232, 232, 232);
+    padding: 15px 32px;
+    text-align:center;
+    border-radius: 30px;
+}
+
+#bio{
+    font-size: 1.1rem;
+}
+
+#contact:hover{
+    background-color:rgb(191, 191, 191);
+}
+
+#tag{
+    float:left;
+    text-align:center;
+    margin:5%;
+    margin-bottom:10%;
+}
+/* 
+#grid-top{
+    color:black;
+    margin:10%;
+    margin-top:20%;
+    grid-template-columns: auto auto;
+} */
+
+#bio{
+    color:black;
+}
+
 #container{
     text-align: center;
     width:100%;
@@ -163,6 +210,15 @@ h1{
     #banner{
         margin-top:150px;
     }
+    #grid-top{
+        color:black;
+        margin:10%;
+        margin-top:20%;
+        display:inline-block;
+    }    
+    #tag{
+        margin: 0 25% 10% 25%;
+    }
 }
 
 @media screen and (min-width: 600px) {
@@ -188,6 +244,14 @@ h1{
         width: 100%;
         position: relative;
     }
+
+    #grid-top{
+        color:black;
+        margin:10%;
+        margin-top:20%;
+        display:inline-block;
+        grid-template-columns: auto;
+    }    
 }
 
 @media screen and (min-width: 768px) {
@@ -213,6 +277,13 @@ h1{
     #full-menu{
         visibility: visible;
     }
+
+    #grid-top{
+        color:black;
+        margin:10%;
+        margin-top:20%;
+        grid-template-columns: auto auto;
+    }    
 }
 
 @media screen and (min-width: 1000px){
@@ -233,6 +304,13 @@ h1{
     #full-menu{
         visibility: visible;
     }
+    
+    #grid-top{
+        color:black;
+        margin:10%;
+        margin-top:20%;
+        grid-template-columns: auto auto;
+    }    
 }
 
 /*

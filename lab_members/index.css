@@ -16,10 +16,6 @@ body{
     justify-content: center;
 }
 
-#grid{
-
-}
-
 #container{
     text-align: center;
     width:100%;
@@ -35,18 +31,38 @@ body{
 }
 
 footer{
-    margin-top:50%;
+    margin-top:20%;
     width: 100%;
-    padding-top:10%;
-    background: rgb(187, 209, 245);
+    background: rgb(178, 195, 220);
     bottom:0;
     height:350px;
     position:relative;
-    z-index:-1;
+    z-index:0;
+}
+
+footer a{
+    color: black;
+}
+
+footer a:hover{
+    text-decoration: none;
+    color: gray;
 }
 
 #grid-element{
     padding:15% 5% 15% 5%;
+}
+
+#grid-elementz{
+    padding-top:125px;
+    padding-left:12%;
+}
+
+#gridz{
+    width:100%;
+    color: black;
+    grid-template-columns: auto auto auto;
+    display: inline-grid;
 }
 
 #grid{
@@ -65,7 +81,7 @@ footer{
     width: 100%;
     visibility: visible;
     padding-left:5%;
-    overflow: hiddenz;
+    overflow: hidden;
     background-color: rgb(151, 175, 163);
     padding-right: 5%;
 }
