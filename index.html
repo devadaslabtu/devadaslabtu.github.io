@@ -159,24 +159,6 @@
                 // }
             })
             
-            document.querySelector("#login_soto").addEventListener("click", ()=>{
-                const users = "mdevadas, nhondr1, daligh1, ytewal1, mhakim, skoune2, stopka1, braufm1, zquresh1, tsnyder, atrigu1".split(", ")
-                // let d = decodeURIComponent(document.cookie).split(";")[0].split("=")[1]
-                // if(users.includes(d)){
-                //     alert(`Username: ${d}@towson.edu or students.towson.edu \nPassword: ${d}2021`)
-                // }
-                // else{
-                let username = prompt("Please enter your username");
-
-                if(users.includes(username)){
-                    alert(`Username: ${username}@towson.edu or students.towson.edu \nPassword: ${username}2021`)
-                    document.cookie = "username="+username
-                }
-                else{
-                    alert("You are not granted access to this")
-                }
-                // }
-            })
 
             setInterval(() => {
                 if(r <= 120) rr = true
