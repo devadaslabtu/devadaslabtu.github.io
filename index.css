@@ -14,14 +14,6 @@ body{
     display: inline-block;
 }
 
-.catherine{
-     color:#ededed;
-}
-
-.catherine:hover{
-    color:black;
-}
-
 h1{
     padding-top:5%;
 }
@@ -247,4 +239,12 @@ h1{
 */
 #menuToggle input:checked ~ ul{
     transform: none;
+}
+
+.catherine{
+     color:#ededed;
+}
+
+.catherine:hover{
+    color:black;
 }
