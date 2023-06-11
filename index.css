@@ -38,6 +38,9 @@ h1{
     right:0;
 }
 
+.catherine{
+     color:#ededed;
+}
 
 @media screen and (max-width: 600px) {
     body {
